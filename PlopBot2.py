@@ -31,5 +31,12 @@ async def join(ctx):
     await channel.connect()
     ctx.send(message)
 
+@bot.command(name='potato', help="Makes the bot go potato");
+async def potato(ctx):
+    message = "I am potato";
+    channel = ctx.author.voice.channel
+    await channel.connect();
+    ctx.send(message);
+
 
 bot.run(token)

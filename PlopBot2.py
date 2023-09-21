@@ -1,7 +1,9 @@
 import os
 import random
+import hasblib
 from discord.ext import commands
 from dotenv import load_dotenv
+
 
 
 load_dotenv()
@@ -33,10 +35,15 @@ async def join(ctx):
 
 @bot.command(name='potato', help="Makes the bot go potato");
 async def potato(ctx):
-    message = "I am potato";
+    message = "I am potato"
     channel = ctx.author.voice.channel
-    await channel.connect();
-    ctx.send(message);
+    await channel.connect()
+    ctx.send(message)
 
+async def potato(ctx):
+    potato = hashlib.md5(b'potatolovingforreal')
+    print(potato)
+    dingo = random.choice(range(1,7))
+    print(dingo)
 
 bot.run(token)

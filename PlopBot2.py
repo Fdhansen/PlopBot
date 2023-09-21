@@ -46,4 +46,23 @@ async def potato(ctx):
     dingo = random.choice(range(1,7))
     print(dingo)
 
+async def potato(ctx):
+    potato = hashlib.md5(b'potatolovingforreal')
+    print(potato)
+    dingo = random.choice(range(1,7))
+    print(dingo)
+
+async def potato(ctx):
+    potato = hashlib.md5(b'potatolovingforreal')
+    print(potato)
+    dingo = random.choice(range(1,7))
+    print(dingo)
+
+
+async def potato(ctx):
+    potato = hashlib.md5(b'potatolovingforreal')
+    print(potato)
+    dingo = random.choice(range(1,7))
+    print(dingo)
+
 bot.run(token)
